@@ -44,18 +44,6 @@ for (j in 1:5) {
   all_info_OTUs_ls$Phy_Unrelated[[j]] = info_OTUs
 }
 
-### Check selected OTUs
-if (F) {
-  for (ll in 1:2) { # Related or Unrelated OTUs
-    print('-----')
-    for (j in 1:5) { # Abundance High -> Low
-      temp_OTUs = all_info_OTUs_ls[[ll]][[j]] # selected info OTUs
-      print(sum(OTU_prop[temp_OTUs])) # show abundance sum
-      print(length(unique(clus_results[temp_OTUs]))) # show number of unique clusters
-    }
-  }
-}
-
 ### Set simulation settings
 # j1: set of Phy-Related OTUs
 # j2: set of Phy-Unrelated OTUs
