@@ -10,7 +10,6 @@ OTU_prop = dd$pi
 tree$tip.label = paste0('OTU', tree$tip.label)
 names(OTU_prop) = paste0('OTU', names(OTU_prop))
 OTU_prop = OTU_prop[tree$tip.label]
-# OTU_prop_over = OTU_prop * (1-dd$theta) / dd$theta
 
 ### Do clustering
 n_clus = 20
